@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serrurier Urgence 24/7 — Moretti | 09 70 70 56 74</title>
+<link rel="canonical" href="https://www.serrurier-moretti.fr"/>
+<meta name="description" content="Serrurier urgence 24/7 : ouverture de porte sans casse, changement de serrure, blindage de porte, securisation effraction, coffre-fort. Des 79 euros, agree assurance, garantie decennale. Intervention 30 min. Appelez le 09 70 70 56 74."/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1d33;--navy2:#162744;--navy-light:#1e3454;
+  --orange:#ff6b2c;--orange-dk:#e85a1e;--orange-soft:rgba(255,107,44,.07);
+  --bg:#f7f6f3;--white:#fff;--text:#1a1a1a;--dim:#7a7a7a;--line:#e5e3de;
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'Urbanist',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--orange);color:#fff}
+
+/* ═══ HEADER ═══ */
+header{position:absolute;top:0;left:0;right:0;z-index:50;padding:14px 20px}
+.hd{max-width:500px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--sans);font-size:18px;font-weight:900;color:#fff;letter-spacing:-.5px}
+.logo span{color:var(--orange)}
+.hd-tel{font-size:11px;font-weight:800;color:var(--orange);background:rgba(255,107,44,.1);border:1px solid rgba(255,107,44,.2);padding:6px 14px;border-radius:0;letter-spacing:.3px}
+
+/* ═══ HERO ═══ */
+.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:76px 20px 32px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;bottom:-80px;right:-60px;width:280px;height:280px;border-radius:50%;border:50px solid rgba(255,107,44,.03);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),transparent)}
+.hero-w{max-width:500px;margin:auto;position:relative;z-index:1}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:5px 14px;border-radius:999px;font-size:11px;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:18px}
+.hero-pill .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 8px rgba(255,107,44,.5);animation:glow 2s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 4px rgba(255,107,44,.4)}50%{box-shadow:0 0 14px rgba(255,107,44,.6)}}
+.hero h1{font-family:var(--sans);font-size:28px;font-weight:900;line-height:1.1;margin-bottom:8px;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-q{font-family:var(--sans);font-size:13px;font-weight:600;color:rgba(255,255,255,.35);margin-bottom:14px;letter-spacing:.3px}
+
+/* PROBLEM PILLS */
+.problems{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:16px}
+.prob{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:10px 16px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:8px;border-radius:999px}
+.prob:hover{border-color:rgba(255,107,44,.3);background:rgba(255,107,44,.05)}
+.prob.active{border-color:var(--orange);background:rgba(255,107,44,.1)}
+.prob-name{font-size:12px;font-weight:700;white-space:nowrap}
+.prob-price{font-family:var(--serif);font-size:13px;font-weight:700;color:var(--orange)}
+
+/* SOLUTION */
+.solution{display:none;margin-bottom:16px;animation:fadeUp .3s ease}
+.solution.show{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.sol-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sol-title{font-family:var(--serif);font-size:20px;font-weight:600}
+.sol-title em{color:var(--orange);font-style:italic}
+.sol-price-tag{background:var(--orange);color:#fff;padding:4px 14px;border-radius:999px;font-weight:800;font-size:14px}
+.sol-steps{display:flex;flex-direction:column;gap:0;position:relative;padding-left:24px;margin-bottom:16px}
+.sol-steps::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--orange),rgba(255,107,44,.2))}
+.sol-step{display:flex;gap:12px;align-items:flex-start;padding:8px 0;position:relative}
+.sol-step::before{content:'';position:absolute;left:-20px;top:12px;width:10px;height:10px;border-radius:50%;background:var(--navy2);border:2px solid var(--orange);z-index:1}
+.sol-step.done::before{background:var(--orange)}
+.sol-step-content{flex:1}
+.sol-step-title{font-size:13px;font-weight:800;color:#fff;margin-bottom:1px}
+.sol-step-desc{font-size:11px;color:rgba(255,255,255,.4);line-height:1.4}
+.sol-step-time{font-family:var(--serif);font-size:11px;color:var(--orange);font-weight:600;white-space:nowrap;padding-top:1px}
+.sol-footer{display:flex;gap:8px;padding-top:14px;border-top:1px solid rgba(255,255,255,.06)}
+.sol-call{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:14px;transition:all .15s}
+.sol-call:hover{background:var(--orange-dk)}
+.sol-call svg{width:14px;height:14px;fill:#fff}
+.sol-form-btn{flex:1;padding:12px;border:1px solid rgba(255,255,255,.12);border-radius:0;color:rgba(255,255,255,.6);font-weight:700;font-size:12px;text-align:center;cursor:pointer;transition:all .15s;background:none;font-family:var(--sans)}
+.sol-form-btn:hover{border-color:var(--orange);color:var(--orange)}
+
+/* HERO STATS */
+.hero-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.hn{background:rgba(255,255,255,.04);border-radius:14px;padding:12px 8px;text-align:center}
+.hn b{display:block;font-family:var(--serif);font-size:20px;font-weight:700;color:var(--orange)}
+.hn span{font-size:9px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.25);font-weight:700}
+
+
+/* ═══ SOLUTION PLACEHOLDER ═══ */
+.sol-placeholder{border:2px dashed rgba(255,255,255,.08);border-radius:20px;padding:24px 16px;text-align:center;margin-bottom:16px}
+.sol-ph-arrow{font-size:20px;color:var(--orange);margin-bottom:6px;animation:bounce 1.5s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.sol-ph-text{font-size:12px;color:rgba(255,255,255,.25);font-weight:600}
+/* ═══ CONTENT ═══ */
+.content{max-width:500px;margin:auto;padding:0 20px}
+.spacer{height:32px}
+
+/* ═══ SECTION HEADER ═══ */
+.sh{margin-bottom:20px}
+.sh-label{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:4px}
+.sh h2{font-family:var(--serif);font-size:24px;font-weight:600}
+.sh h2 em{font-style:italic;color:var(--navy)}
+.sh p{color:var(--dim);font-size:12px;margin-top:2px}
+
+/* ═══ PROCESS — STACKED MINIMAL ═══ */
+.step-list{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step-n{width:32px;height:32px;background:var(--navy);color:var(--orange);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:14px;font-weight:700;flex-shrink:0}
+.step h4{font-size:14px;font-weight:800;margin-bottom:1px}
+.step p{color:var(--dim);font-size:12px;line-height:1.45}
+
+/* ═══ TARIF CARD ═══ */
+.tarif{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.tarif-top{background:var(--navy);padding:20px;text-align:center;color:#fff}
+.tarif-top h3{font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:2px}
+.tarif-top p{font-size:11px;color:rgba(255,255,255,.4)}
+.tarif-price{text-align:center;padding:18px 20px 10px}
+.tarif-big{font-family:var(--serif);font-size:52px;font-weight:700;color:var(--orange);line-height:1}
+.tarif-from{font-size:12px;color:var(--dim)}
+.tarif-lines{padding:0 20px 16px}
+.tl{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}
+.tl:last-child{border-bottom:none}
+.tl-v{font-weight:700;color:var(--orange);font-size:12px}
+.tarif-bot{background:var(--orange-soft);padding:14px 20px;text-align:center;font-size:12px;font-weight:700;color:var(--orange-dk)}
+.tarif-bot small{display:block;font-weight:400;color:var(--dim);margin-top:2px;font-size:10px}
+
+/* ═══ LIVE FEED ═══ */
+.feed-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:18px;overflow:hidden}
+.feed-head{display:flex;align-items:center;gap:6px;margin-bottom:12px}
+.feed-dot{width:7px;height:7px;border-radius:50%;background:#ef4444;animation:livep 1.5s infinite}
+@keyframes livep{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}70%{box-shadow:0 0 0 5px rgba(239,68,68,0)}}
+.feed-label{font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1px}
+.feed-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);opacity:0;animation:fi .4s ease forwards}
+.feed-item:last-child{border-bottom:none}
+.feed-item:nth-child(2){animation-delay:.1s}
+.feed-item:nth-child(3){animation-delay:.2s}
+.feed-item:nth-child(4){animation-delay:.3s}
+.feed-item:nth-child(5){animation-delay:.4s}
+@keyframes fi{to{opacity:1}}
+.feed-time{min-width:38px;font-size:10px;font-weight:800;color:var(--orange);padding-top:1px}
+.feed-txt{font-size:12px;color:var(--dim);line-height:1.4}
+.feed-txt strong{color:var(--text)}
+.feed-badge{display:inline-block;font-size:8px;font-weight:800;color:var(--orange-dk);background:var(--orange-soft);padding:1px 6px;border-radius:999px;margin-left:4px;vertical-align:middle;text-transform:uppercase;letter-spacing:.3px}
+
+/* ═══ COUNTERS ═══ */
+.counters{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cnt{background:var(--navy);border-radius:20px;padding:18px 10px;text-align:center}
+.cnt-val{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--orange);line-height:1;margin-bottom:2px}
+.cnt-lab{font-size:9px;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:1px;font-weight:700}
+
+
+/* ═══ METIER ═══ */
+.met-list{display:flex;flex-direction:column;gap:10px}
+.met{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:16px 18px;border-left:3px solid var(--orange);transition:border-color .15s}
+.met:hover{border-color:var(--orange)}
+.met h4{font-size:14px;font-weight:800;margin-bottom:2px}
+.met p{color:var(--dim);font-size:13px;line-height:1.5}
+/* ═══ CTA STRIP ═══ */
+.cta-strip{background:var(--orange);margin:0 -20px;padding:24px 20px;text-align:center}
+.cta-strip h3{font-family:var(--serif);font-size:20px;font-weight:600;color:#fff;margin-bottom:4px}
+.cta-strip p{font-size:11px;color:rgba(255,255,255,.6);margin-bottom:12px}
+.cta-strip a{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:var(--navy);color:#fff;border-radius:0;font-weight:800;font-size:14px;transition:all .15s}
+.cta-strip a:hover{background:var(--navy-light)}
+.cta-strip a svg{width:14px;height:14px;fill:#fff}
+
+/* ═══ ASSURANCE ═══ */
+.assur-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.assur{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center;transition:border-color .15s}
+.assur:hover{border-color:var(--orange)}
+.assur h4{font-size:13px;font-weight:800;margin-bottom:2px}
+.assur p{font-size:10px;color:var(--dim);line-height:1.4}
+.assur-note{text-align:center;font-size:10px;color:var(--dim);font-style:italic;margin-top:10px}
+
+/* ═══ AVIS ═══ */
+.avis-scroll{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 20px 8px;margin:0 -20px}
+.avis-scroll::-webkit-scrollbar{display:none}
+.av{min-width:260px;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:16px;flex-shrink:0;scroll-snap-align:start}
+.av-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.av-stars{color:var(--orange);font-size:11px;letter-spacing:1px}
+.av cite{font-style:normal;font-weight:800;font-size:11px}
+.av blockquote{font-family:var(--serif);font-style:italic;color:var(--dim);font-size:14px;line-height:1.5}
+
+/* ═══ FORM ═══ */
+.form-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:20px;position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange)}
+.form-card h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:2px}
+.form-card>p{font-size:11px;color:var(--dim);margin-bottom:14px;display:flex;align-items:center;gap:6px}
+.form-card .dot{width:5px;height:5px;border-radius:50%;background:var(--orange);animation:glow 2s infinite}
+.ff{margin-bottom:8px}
+.ff label{display:block;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);margin-bottom:3px}
+.ff input,.ff select,.ff textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:12px;font-family:var(--sans);font-size:13px;color:var(--text);background:var(--bg);transition:border .15s}
+.ff input:focus,.ff select:focus,.ff textarea:focus{outline:none;border-color:var(--orange)}
+.ff textarea{min-height:70px;resize:vertical}
+.ff-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ff-note{font-size:9px;color:var(--dim);margin-bottom:8px}
+.ff-btns{display:flex;gap:8px}
+.ff-go{flex:1;padding:13px;background:var(--navy);color:#fff;border:none;border-radius:0;font-weight:800;font-size:14px;cursor:pointer;transition:background .15s}
+.ff-go:hover{background:var(--orange)}
+.ff-tel{flex:1;padding:13px;border:1px solid var(--line);border-radius:0;background:none;text-align:center;font-weight:800;font-size:13px;color:var(--text);transition:all .15s}
+.ff-tel:hover{border-color:var(--orange);color:var(--orange)}
+
+/* ═══ FAQ ═══ */
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:14px 0;cursor:pointer;font-size:14px;font-weight:700;transition:color .15s}
+.faq-q:hover{color:var(--orange)}
+.faq-q span{width:24px;height:24px;background:var(--navy);color:var(--orange);border-radius:50%;display:grid;place-items:center;font-size:13px;transition:all .2s;flex-shrink:0}
+.faq-a{display:none;padding:0 0 14px;color:var(--dim);font-size:13px;line-height:1.6}
+.faq-item.on .faq-a{display:block}
+.faq-item.on .faq-q span{background:var(--orange);color:#fff;transform:rotate(45deg)}
+
+/* ═══ FOOTER ═══ */
+footer{background:var(--navy);color:rgba(255,255,255,.3);padding:24px 20px;text-align:center;font-size:11px;margin-top:28px}
+footer strong{color:#fff;font-size:16px;font-weight:900;display:block;margin-bottom:2px}
+footer strong span{color:var(--orange)}
+.foot-links{display:flex;justify-content:center;gap:14px;margin:10px 0}
+.foot-links a:hover{color:var(--orange)}
+
+/* ═══ RESPONSIVE ═══ */
+@media(min-width:769px){
+  .content{max-width:640px}
+  .hero-w{max-width:580px}
+  .hero h1{font-size:36px}
+  .problems{gap:8px}
+  .sol-btns{max-width:400px}
+  .step-list{flex-direction:row;flex-wrap:wrap}
+  .step{flex:1;min-width:calc(50% - 8px);flex-direction:column;align-items:center;text-align:center;border-bottom:none;border-right:1px solid var(--line);padding:16px}
+  .step:last-child{border-right:none}
+  .assur-grid{grid-template-columns:repeat(3,1fr)}
+  .avis-scroll{justify-content:center;flex-wrap:wrap;overflow:visible}
+  .av{min-width:0;flex:1}
+  .ff-btns{flex-direction:row}
+  .cta-strip{margin:0;border-radius:20px}
+  .counters{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Locksmith","name":"Moretti Serrurier","description":"Serrurier urgence 24/7. Ouverture de porte, changement de serrure, blindage, securisation.","telephone":"09 70 70 56 74","priceRange":"A partir de 79 euros","openingHours":"Mo-Su 00:00-23:59","areaServed":{"@type":"Country","name":"France"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services serrurerie","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ouverture de porte"},"price":"79","priceCurrency":"EUR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Changement de serrure"},"price":"79","priceCurrency":"EUR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Blindage et securisation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Coffre-fort"}}]},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"847"}}
+</script>
+</head>
+<body>
+
+<header><div class="hd">
+  <a class="logo" href="#">MORETTI<span>.</span></a>
+  <a class="hd-tel" href="tel:0970705674">09 70 70 56 74</a>
+</div></header>
+
+<section class="hero" aria-label="Serrurier urgence 24h24 - ouverture de porte et changement de serrure">
+  <div class="hero-w">
+    <div class="hero-pill"><span class="dot"></span> Disponible maintenant</div>
+    <h1>Serrurier <em>d'urgence</em> 24/7</h1>
+
+    <p class="hero-q">Selectionnez votre probleme ci-dessous pour voir les etapes de votre intervention</p>
+    <div style="margin-bottom:14px;text-align:center"><a href="tel:0970705674" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:13px"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a></div>
+    <div class="problems" id="problems">
+      <div class="prob" data-id="0" onclick="showSolution(0)"><span class="prob-name">Porte claquee</span><span class="prob-price">79&#8364;</span></div>
+      <div class="prob" data-id="1" onclick="showSolution(1)"><span class="prob-name">Cle perdue</span><span class="prob-price">79&#8364;</span></div>
+      <div class="prob" data-id="2" onclick="showSolution(2)"><span class="prob-name">Changer serrure</span><span class="prob-price">79&#8364;</span></div>
+      <div class="prob" data-id="3" onclick="showSolution(3)"><span class="prob-name">Effraction</span><span class="prob-price">Devis</span></div>
+      <div class="prob" data-id="4" onclick="showSolution(4)"><span class="prob-name">Coffre-fort</span><span class="prob-price">Devis</span></div>
+    </div>
+    <div class="sol-placeholder" id="solPlaceholder">
+      <div class="sol-ph-arrow">&#8595;</div>
+      <div class="sol-ph-text">Votre parcours d'intervention s'affiche ici</div>
+    </div>
+    <div class="solution" id="solution"></div>
+    <div class="hero-nums">
+      <div class="hn"><b>30'</b><span>Delai</span></div>
+      <div class="hn"><b>79&#8364;</b><span>Des</span></div>
+      <div class="hn"><b>24/7</b><span>Dispo</span></div>
+      <div class="hn"><b>4.9</b><span>Avis</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Methode</div><h2>Ouverture de porte & <em>changement de serrure</em></h2></div>
+  <div class="step-list">
+    <div class="step"><div class="step-n">1</div><div><h4>Appelez</h4><p>Diagnostic en 2 min par telephone.</p></div></div>
+    <div class="step"><div class="step-n">2</div><div><h4>Devis</h4><p>Tarif transparent des 79&#8364;.</p></div></div>
+    <div class="step"><div class="step-n">3</div><div><h4>On arrive</h4><p>30 min en moyenne, materiel certifie.</p></div></div>
+    <div class="step"><div class="step-n">4</div><div><h4>Facture</h4><p>Conforme assurance, photos incluses.</p></div></div>
+  </div>
+  <div style="text-align:center;margin-top:14px"><a href="tel:0970705674" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:13px"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a></div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Tarifs</div><h2>Tarif serrurier <em>transparent</em></h2><p>Tout est inclus, pas de surprise</p></div>
+  <div class="tarif">
+    <div class="tarif-top"><h3>Intervention standard</h3><p>Ouverture, changement cylindre</p></div>
+    <div class="tarif-price"><div class="tarif-big">79&#8364;</div><div class="tarif-from">a partir de, TTC</div></div>
+    <div class="tarif-lines">
+      <div class="tl"><span>Deplacement</span><span class="tl-v">Inclus</span></div>
+      <div class="tl"><span>Diagnostic</span><span class="tl-v">Inclus</span></div>
+      <div class="tl"><span>Main d'oeuvre</span><span class="tl-v">Inclus</span></div>
+      <div class="tl"><span>Devis ecrit</span><span class="tl-v">Gratuit</span></div>
+      <div class="tl"><span>Nuit / jours feries</span><span class="tl-v">Meme tarif</span></div>
+      <div class="tl"><span>Facture detaillee</span><span class="tl-v">Inclus</span></div>
+    </div>
+    <div class="tarif-bot">Tarif annonce = tarif facture<small>Pieces et fournitures en supplement selon le materiel</small></div>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">En direct</div><h2>Urgences <em>recentes</em></h2></div>
+  <div class="feed-card">
+    <div class="feed-head"><span class="feed-dot"></span><span class="feed-label">En direct</span></div>
+    <div class="feed-item"><span class="feed-time">12 min</span><div class="feed-txt"><strong>Ouverture porte</strong> — Sans casse, client depanne <span class="feed-badge">OK</span></div></div>
+    <div class="feed-item"><span class="feed-time">38 min</span><div class="feed-txt"><strong>Cylindre Vachette</strong> — Pose + nouvelles cles <span class="feed-badge">OK</span></div></div>
+    <div class="feed-item"><span class="feed-time">1h15</span><div class="feed-txt"><strong>Effraction</strong> — Serrure + renfort + photos assurance <span class="feed-badge">OK</span></div></div>
+    <div class="feed-item"><span class="feed-time">2h30</span><div class="feed-txt"><strong>Porte blindee</strong> — Cle cassee, extraction + cylindre <span class="feed-badge">OK</span></div></div>
+    <div class="feed-item"><span class="feed-time">3h45</span><div class="feed-txt"><strong>Coffre-fort</strong> — Code oublie, ouverture sans dommage <span class="feed-badge">OK</span></div></div>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Chiffres</div><h2>Nos <em>interventions</em></h2></div>
+  <div class="counters">
+    <div class="cnt"><div class="cnt-val" data-target="12847">0</div><div class="cnt-lab">Interventions</div></div>
+    <div class="cnt"><div class="cnt-val" data-target="4832">0</div><div class="cnt-lab">Portes ouvertes</div></div>
+    <div class="cnt"><div class="cnt-val" data-target="3215">0</div><div class="cnt-lab">Serrures posees</div></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+<div class="cta-strip">
+  <h3>Besoin d'aide maintenant ?</h3>
+  <p>Un artisan disponible pres de chez vous</p>
+  <a href="tel:0970705674"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a>
+</div>
+
+<div class="content">
+
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Expertise</div><h2>Serrurier <em>agree assurance</em></h2><p>Notre expertise a chaque intervention</p></div>
+
+  <div class="met-list">
+    <div class="met"><h4>Ouverture soignee</h4><p>Techniques propres sans dommage. Votre porte et votre serrure restent intactes. On evite la casse pour limiter vos frais.</p></div>
+    <div class="met"><h4>Pieces & garanties</h4><p>Cylindres et serrures de marques reconnues (Vachette, Fichet, Bricard, Mottura, DOM). Pose propre, garantie pieces et main d'oeuvre.</p></div>
+    <div class="met"><h4>Tracabilite complete</h4><p>Photos avant/apres, facture detaillee conforme pour l'assurance, rapport d'intervention et conseils anti-effraction personnalises.</p></div>
+    <div class="met"><h4>Transparence tarifaire</h4><p>Devis gratuit valide avant intervention. Tarif annonce = tarif facture. Aucun frais cache, aucun supplement surprise.</p></div>
+    <div class="met"><h4>Reactivite permanente</h4><p>Astreinte 24h/24, 7j/7, jours feries inclus. Delai moyen 30 minutes. Un artisan de votre secteur se deplace avec tout le materiel.</p></div>
+    <div class="met"><h4>Dossier assurance</h4><p>Facture conforme, attestation decennale et RC pro. On vous guide dans vos demarches pour la prise en charge de votre sinistre.</p></div>
+  </div>
+  <div style="text-align:center;margin-top:14px"><a href="tel:0970705674" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:13px"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a></div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Assurance</div><h2>Facture conforme <em>assurance</em></h2><p>Nous facilitons vos demarches</p></div>
+  <div class="assur-grid">
+    <div class="assur"><h4>Facture detaillee</h4><p>Conforme aux exigences</p></div>
+    <div class="assur"><h4>Photos</h4><p>Avant/apres intervention</p></div>
+    <div class="assur"><h4>Devis ecrit</h4><p>A transmettre a l'assureur</p></div>
+    <div class="assur"><h4>Rapport</h4><p>Description intervention</p></div>
+    <div class="assur"><h4>Attestation</h4><p>Decennale et RC pro</p></div>
+    <div class="assur"><h4>Conseils</h4><p>On vous guide</p></div>
+  </div>
+  <p class="assur-note">Documents concus pour faciliter la prise en charge par votre assurance.</p>
+  <div style="text-align:center;margin-top:14px"><a href="tel:0970705674" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:13px"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a></div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Avis</div><h2>Ils nous font <em>confiance</em></h2></div>
+</div>
+
+<div class="avis-scroll">
+  <div class="av"><div class="av-top"><span class="av-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><cite>Claire</cite></div><blockquote>Ouverture rapide et sans casse. Prix respecte.</blockquote></div>
+  <div class="av"><div class="av-top"><span class="av-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><cite>Didier</cite></div><blockquote>Multipoints posee, travail propre. Je recommande.</blockquote></div>
+  <div class="av"><div class="av-top"><span class="av-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><cite>Amel</cite></div><blockquote>Securisation effraction. Tres efficace.</blockquote></div>
+  <div class="av"><div class="av-top"><span class="av-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><cite>Marc</cite></div><blockquote>Coffre-fort bloque, intervention rapide.</blockquote></div>
+</div>
+
+<div class="content">
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">Contact</div><h2>Serrurier d'urgence — <em>contactez-nous</em></h2></div>
+  <div class="form-card" id="rappel">
+    <h3>Rappel en 5 minutes</h3>
+    <p><span class="dot"></span> Un artisan vous recontacte</p>
+    <form id="contactForm">
+      <div class="ff-row">
+        <div class="ff"><label>Nom</label><input id="cNom" required placeholder="Votre nom"></div>
+        <div class="ff"><label>Telephone</label><input id="cTel" type="tel" required placeholder="06 00 00 00 00"></div>
+      </div>
+      <div class="ff"><label>Email</label><input id="cEmail" type="email" placeholder="vous@exemple.fr"></div>
+      <div class="ff"><label>Prestation</label><select id="cService"><option value="">-- Selectionner --</option><option>Ouverture de porte</option><option>Changement de serrure</option><option>Multipoints</option><option>Blindage</option><option>Effraction</option><option>Coffre-fort</option></select></div>
+      <div class="ff"><label>Message</label><textarea id="cMsg" placeholder="Decrivez votre situation"></textarea></div>
+      <p class="ff-note">En envoyant, vous acceptez d'etre recontacte.</p>
+      <div class="ff-btns">
+        <button class="ff-go" type="submit">Envoyer</button>
+        <a class="ff-tel" href="tel:0970705674">09 70 70 56 74</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="sh"><div class="sh-label">FAQ</div><h2>Questions <em>frequentes</em></h2></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('on')">Ouvrez-vous sans endommager la porte ? <span>+</span></div><div class="faq-a">Oui, techniques sans casse. Si remplacement necessaire, devis valide avant.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('on')">Posez-vous des multipoints ? <span>+</span></div><div class="faq-a">Oui, materiel certifie, cles protegees, reglages precis.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('on')">Intervenez-vous apres effraction ? <span>+</span></div><div class="faq-a">Oui, securisation immediate, photos et facture assurance.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('on')">Quel delai d'intervention ? <span>+</span></div><div class="faq-a">30 min en moyenne. 24h/24, 7j/7, jours feries.</div></div>
+
+  <div style="text-align:center;margin-top:16px"><a href="tel:0970705674" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;background:var(--orange);color:#fff;border-radius:0;font-weight:800;font-size:15px;width:100%"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a></div>
+<div class="spacer"></div>
+</div>
+
+<footer>
+  <strong>MORETTI<span>.</span></strong>
+  <small>Serrurier d'urgence — 24/7</small>
+  <div class="foot-links">
+    <a href="tel:0970705674" style="color:var(--orange)">09 70 70 56 74</a>
+    <a href="plombier-moretti.html">Plombier</a>
+  </div>
+  <small>&copy; <span id="yr"></span> Moretti</small>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+var solutions=[
+  {title:'Porte <em>claquee</em>',desc:'Vous etes dehors, porte fermee. Notre artisan ouvre sans abimer.',points:['<strong>Ouverture sans casse</strong> — technique soignee','<strong>30 min</strong> — disponible maintenant','<strong>79&#8364;</strong> — devis valide avant','<strong>Porte blindee</strong> — on gere aussi','<strong>Facture assurance</strong> — conforme'],select:'Ouverture de porte'},
+  {title:'Cle <em>perdue</em>',desc:'Cles perdues ou volees. On ouvre et on securise avec un nouveau cylindre.',points:['<strong>Ouverture + nouveau cylindre</strong>','<strong>Cles protegees</strong> — non reproductibles','<strong>30 min</strong> — intervention rapide','<strong>Des 79&#8364;</strong> — transparent','<strong>Conseil securite</strong> — on vous guide'],select:'Changement de serrure'},
+  {title:'Changer <em>serrure</em>',desc:'Upgrade securite ou serrure cassee. Materiel certifie haute securite.',points:['<strong>Vachette, Fichet, Bricard</strong>','<strong>Multipoints 3, 5 ou 7 points</strong>','<strong>Cles protegees</strong>','<strong>Garantie pieces et MO</strong>','<strong>Des 79&#8364;</strong> — devis gratuit'],select:'Changement de serrure'},
+  {title:'<em>Effraction</em>',desc:'Tentative ou effraction reussie. Securisation immediate + dossier assurance.',points:['<strong>Mise en securite</strong> — priorite absolue','<strong>Remplacement + renfort</strong>','<strong>Photos avant/apres</strong>','<strong>Facture conforme</strong> — prise en charge','<strong>24h/24</strong> — nuit et jours feries'],select:'Effraction'},
+  {title:'<em>Coffre-fort</em>',desc:'Coffre bloque ou code oublie. Ouverture sans dommage.',points:['<strong>Ouverture sans dommage</strong>','<strong>Toutes marques</strong>','<strong>Installation coffre neuf</strong>','<strong>Devis gratuit</strong> — sur place','<strong>Intervention rapide</strong>'],select:'Coffre-fort'}
+];
+
+function showSolution(i){
+  document.querySelectorAll('.prob').forEach(function(p){p.classList.remove('active')});
+  document.querySelector('[data-id="'+i+'"]').classList.add('active');
+  var s=solutions[i];
+  var h='<div class="sol-title">'+s.title+'</div><p class="sol-desc">'+s.desc+'</p><ul class="sol-points">';
+  s.points.forEach(function(p){h+='<li>'+p+'</li>'});
+  h+='</ul><div class="sol-btns"><a class="sol-call" href="tel:0970705674"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>09 70 70 56 74</a>';
+  h+='<button class="sol-form-btn" onclick="document.getElementById(\'cService\').value=\''+s.select+'\';document.getElementById(\'rappel\').scrollIntoView({behavior:\'smooth\'})">Rappel gratuit</button></div>';
+  var ph=document.getElementById('solPlaceholder');if(ph)ph.style.display='none';var el=document.getElementById('solution');
+  el.classList.remove('show');
+  setTimeout(function(){el.innerHTML=h;el.classList.add('show')},50);
+}
+
+// Counter
+var counted=false;
+function animC(){if(counted)return;counted=true;document.querySelectorAll('.cnt-val').forEach(function(el){var t=parseInt(el.getAttribute('data-target'));var s=Math.ceil(t/60);var c=0;var ti=setInterval(function(){c+=s;if(c>=t){c=t;clearInterval(ti)}el.textContent=c.toLocaleString('fr-FR')},25)})}
+var co=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)animC()})},{threshold:.3});
+var cr=document.querySelector('.counters');if(cr)co.observe(cr);
+
+// Telegram
+var TG_TOKEN='8369044610:AAGu-pI1c86lbmoBc50pfyEALgUaS2PvV18',TG_CHAT='-5040006126';
+function tgSend(label,data){
+  var l=['<b>'+label+'</b>'];
+  for(var k in data)if(data[k])l.push('<b>'+k+':</b> '+data[k]);
+  var x=new XMLHttpRequest();
+  x.open('POST','https://api.telegram.org/bot'+TG_TOKEN+'/sendMessage');
+  x.setRequestHeader('Content-Type','application/json');
+  x.onload=function(){console.log('TG:',x.responseText);window.location.href='merci'};
+  x.onerror=function(){console.error('TG fail');window.location.href='merci'};
+  x.send(JSON.stringify({chat_id:TG_CHAT,text:l.join('\n'),parse_mode:'HTML'}));
+}
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();e.stopPropagation();tgSend('SERRURIER MORETTI (contact)',{Nom:document.getElementById('cNom').value,Telephone:document.getElementById('cTel').value,Email:document.getElementById('cEmail').value,Service:document.getElementById('cService').value,Message:document.getElementById('cMsg').value})});
+</script>
+</body>
+</html>
