@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Demande envoyée — Merci | Serrurier Moretti</title>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://www.serrurier-moretti.fr/merci"/>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1626;--navy2:#162744;--navy-light:#1e3454;--navy-deep:#070d18;
+  --orange:#ff6b2c;--orange-dk:#e85a1e;--orange-glow:rgba(255,107,44,.15);
+  --gold:#f4b942;--white:#fff;
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'Urbanist',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--sans);
+  background:
+    radial-gradient(ellipse at top right, rgba(255,107,44,.15), transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(30,52,84,.6), transparent 50%),
+    linear-gradient(160deg,var(--navy-deep),var(--navy2));
+  color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:24px;overflow:hidden;position:relative;-webkit-font-smoothing:antialiased;
+}
+body::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),transparent)}
+a{color:inherit;text-decoration:none}
+.card{
+  position:relative;z-index:1;max-width:480px;width:100%;text-align:center;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  border-radius:28px;padding:44px 32px;backdrop-filter:blur(10px);
+  box-shadow:0 20px 48px rgba(0,0,0,.3)
+}
+.check{
+  width:84px;height:84px;margin:0 auto 24px;border-radius:50%;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  display:grid;place-items:center;box-shadow:0 12px 32px rgba(34,197,94,.35);
+  animation:pop .5s cubic-bezier(.2,1.3,.5,1) both
+}
+.check svg{width:44px;height:44px;fill:#fff;stroke-dasharray:48;stroke-dashoffset:48;animation:draw .5s .3s ease forwards}
+@keyframes pop{0%{transform:scale(.4);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pill{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(34,197,94,.12);
+  border:1px solid rgba(34,197,94,.3);color:#86efac;padding:6px 16px;border-radius:999px;
+  font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px
+}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 12px rgba(34,197,94,.7);animation:glow 2s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 6px rgba(34,197,94,.5)}50%{box-shadow:0 0 18px rgba(34,197,94,.9)}}
+h1{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.2;margin-bottom:12px;letter-spacing:-.5px}
+h1 em{font-style:italic;color:var(--orange)}
+.lead{font-size:15px;line-height:1.6;color:rgba(255,255,255,.72);margin-bottom:8px}
+.lead strong{color:#fff;font-weight:700}
+.sub{font-family:var(--serif);font-style:italic;font-size:13px;color:rgba(255,255,255,.55);margin-bottom:28px}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;
+  background:var(--orange);color:#fff;padding:16px 28px;border-radius:24px;
+  font-weight:800;font-size:15px;box-shadow:0 12px 32px var(--orange-glow);
+  transition:all .2s;position:relative;overflow:hidden;line-height:1.25
+}
+.cta::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.2),transparent);transform:translateX(-100%);transition:transform .6s}
+.cta:hover::before{transform:translateX(100%)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px var(--orange-glow)}
+.cta svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+.cta-text{display:flex;flex-direction:column;align-items:center;gap:1px;white-space:nowrap}
+.cta-tel{font-size:17px;font-weight:900;letter-spacing:.3px}
+.note{margin-top:16px;font-size:12px;color:rgba(255,255,255,.5);font-style:italic;font-family:var(--serif)}
+.back{margin-top:22px;font-size:13px;font-weight:600;color:rgba(255,255,255,.6);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+.back:hover{color:var(--orange)}
+.back svg{width:14px;height:14px;fill:currentColor}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">
+      <svg viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <div class="pill"><span class="dot"></span> Demande reçue</div>
+    <h1>Merci, votre demande<br>est <em>bien envoyée</em></h1>
+    <p class="lead">Un membre de l'équipe <strong>Moretti</strong> vous recontacte dans les plus brefs délais.</p>
+    <p class="sub">Pour une urgence, le téléphone reste le plus rapide.</p>
+
+    <a class="cta" href="tel:0970705674">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span class="cta-text"><span>Appeler maintenant</span><span class="cta-tel">09 70 70 56 74</span></span>
+    </a>
+    <p class="note">Décroché en moins d'1 min · 24h/24, 7j/7</p>
+
+    <a class="back" href="/">
+      <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      Retour à l'accueil
+    </a>
+  </div>
+</body>
+</html>
